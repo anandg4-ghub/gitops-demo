@@ -7,7 +7,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app/ .
 
-ENV APP_VERSION=1.0.0
+ARG APP_VERSION=unknown
+ENV APP_VERSION=${APP_VERSION}
 
 EXPOSE 8080
 
