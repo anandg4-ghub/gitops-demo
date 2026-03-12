@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo
-          image: anandgtry/gitops-demo:latest
+          image: anandgtry/gitops-demo:ce0ea5a
           ports:
             - containerPort: 8080
           env:
