@@ -8,7 +8,9 @@ def home():
     return jsonify({
         "app": "gitops-demo",
         "version": os.getenv("APP_VERSION", "1.0.0"),
-        "message": "Hello from the GitOps pipeline! 🚀"
+        "message": "Hello from the GitOps pipeline! 🚀",
+        "environment": "production",
+        "team": "SCP Platform"
     })
 
 @app.route("/health")
