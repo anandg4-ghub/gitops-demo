@@ -5,10 +5,11 @@ metadata:
   labels:
     app: gitops-demo
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: gitops-demo
   ports:
     - port: 80
       targetPort: 8080
+      nodePort: 30080
       protocol: TCP
