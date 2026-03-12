@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo
-          image: DOCKERHUB_USERNAME/gitops-demo:latest
+          image: anandgtry/gitops-demo:latest
           ports:
             - containerPort: 8080
           env:
